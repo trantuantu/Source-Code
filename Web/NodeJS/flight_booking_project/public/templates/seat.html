@@ -1,0 +1,493 @@
+<div ng-controller="SeatCtrl">
+<h3 style="color:#006666; font-weight: bold; margin-left: 100px;">Chọn ghế</h3>
+    <div id="flight1">
+        <h3 style="text-align: center;">Chọn ghế cho chiều khởi hành từ <span style="color: red;">{{placefrom1}}</span> đến <span style="color: red;">{{placeto1}}</span> ngày <span style="color: orange;">{{date1}}</span></h3>
+        <div class="plane" style="border-style: solid;">
+            <div class="cockpit">
+                <h1 style="color: blue; font-weight: bold; margin-top: 100px; font-size: 30px;">CABIN</h1>
+            </div>
+            <div class="exit exit--front fuselage">
+            </div>
+            <div class="exit right fuselage">
+            </div>
+            <ol class="cabin fuselage">
+                <li class="row row--1">
+                    <ol class="seats" type="A">
+                        <li class="seat">
+                            <button type="button" id="1A1" class="btn btn-success" ng-click="chooseSeat('1A1')">1A</button>
+                        </li>
+                        <li class="seat">
+                            <button type="button" id="1B1" class="btn btn-success" ng-click="chooseSeat('1B1')">1B</button>
+                        </li>
+                        <li class="seat">
+                            <button type="button" id="1C1" class="way btn btn-success" ng-click="chooseSeat('1C1')">1C</button>
+                        </li>
+                        <li class="seat">
+                            <button type="button" id="1D1" class="btn btn-success" ng-click="chooseSeat('1D1')">1D</button>
+                        </li>
+                        <li class="seat">
+                            <button type="button" id="1E1" class="btn btn-success" ng-click="chooseSeat('1E1')">1E</button>
+                        </li>
+                        <li class="seat">
+                            <button type="button" id="1F1" class="btn btn-success" ng-click="chooseSeat('1F1')">1F</button>
+                        </li>
+                    </ol>
+                </li>
+                <li class="row row--2">
+                    <ol class="seats" type="A">
+                        <li class="seat">
+                            <button type="button" id="2A1" class="btn btn-success" ng-click="chooseSeat('2A1')">2A</button>
+                        </li>
+                        <li class="seat">
+                            <button type="button" id="2B1" class="btn btn-success" ng-click="chooseSeat('2B1')">2B</button>
+                        </li>
+                        <li class="seat">
+                            <button type="button" id="2C1" class="way btn btn-success" ng-click="chooseSeat('2C1')">2C</button>
+                        </li>
+                        <li class="seat">
+                            <button type="button" id="2D1" class="btn btn-success" ng-click="chooseSeat('2D1')">2D</button>
+                        </li>
+                        <li class="seat">
+                            <button type="button" id="2E1" class="btn btn-success" ng-click="chooseSeat('2E1')">2E</button>
+                        </li>
+                        <li class="seat">
+                            <button type="button" id="2F1" class="btn btn-success" ng-click="chooseSeat('2F1')">2F</button>
+                        </li>
+                    </ol>
+                </li>
+                <li class="row row--3">
+                    <ol class="seats" type="A">
+                        <li class="seat">
+                            <button type="button" id="3A1" class="btn btn-success" ng-click="chooseSeat('3A1')">3A</button>
+                        </li>
+                        <li class="seat">
+                            <button type="button" id="3B1" class="btn btn-success" ng-click="chooseSeat('3B1')">3B</button>
+                        </li>
+                        <li class="seat">
+                            <button type="button" id="3C1" class="way btn btn-success" ng-click="chooseSeat('3C1')">3C</button>
+                        </li>
+                        <li class="seat">
+                            <button type="button" id="3D1" class="btn btn-success" ng-click="chooseSeat('3D1')">3D</button>
+                        </li>
+                        <li class="seat">
+                            <button type="button" id="3E1" class="btn btn-success" ng-click="chooseSeat('3E1')">3E</button>
+                        </li>
+                        <li class="seat">
+                            <button type="button" id="3F1" class="btn btn-success" ng-click="chooseSeat('3F1')">3F</button>
+                        </li>
+                    </ol>
+                </li>
+                <li class="row row--4">
+                    <ol class="seats" type="A">
+                        <li class="seat">
+                            <button type="button" id="4A1" class="btn btn-success" ng-click="chooseSeat('4A1')">4A</button>
+                        </li>
+                        <li class="seat">
+                            <button type="button" id="4B1" class="btn btn-success" ng-click="chooseSeat('4B1')">4B</button>
+                        </li>
+                        <li class="seat">
+                            <button type="button" id="4C1" class="way btn btn-success" ng-click="chooseSeat('4C1')">4C</button>
+                        </li>
+                        <li class="seat">
+                            <button type="button" id="4D1" class="btn btn-success" ng-click="chooseSeat('4D1')">4D</button>
+                        </li>
+                        <li class="seat">
+                            <button type="button" id="4E1" class="btn btn-success" ng-click="chooseSeat('4E1')">4E</button>
+                        </li>
+                        <li class="seat">
+                            <button type="button" id="4F1" class="btn btn-success" ng-click="chooseSeat('4F1')">4F</button>
+                        </li>
+                    </ol>
+                </li>
+                <li class="row row--5">
+                    <ol class="seats" type="A">
+                        <li class="seat">
+                            <button type="button" id="5A1" class="btn btn-success" ng-click="chooseSeat('5A1')">5A</button>
+                        </li>
+                        <li class="seat">
+                            <button type="button" id="5B1" class="btn btn-success" ng-click="chooseSeat('5B1')">5B</button>
+                        </li>
+                        <li class="seat">
+                            <button type="button" id="5C1" class="way btn btn-success" ng-click="chooseSeat('5C1')">5C</button>
+                        </li>
+                        <li class="seat">
+                            <button type="button" id="5D1" class="btn btn-success" ng-click="chooseSeat('5D1')">5D</button>
+                        </li>
+                        <li class="seat">
+                            <button type="button" id="5E1" class="btn btn-success" ng-click="chooseSeat('5E1')">5E</button>
+                        </li>
+                        <li class="seat">
+                            <button type="button" id="5F1" class="btn btn-success" ng-click="chooseSeat('5F1')">5F</button>
+                        </li>
+                    </ol>
+                </li>
+                <li class="row row--6">
+                    <ol class="seats" type="A">
+                        <li class="seat">
+                            <button type="button" id="6A1" class="btn btn-success" ng-click="chooseSeat('6A1')">6A</button>
+                        </li>
+                        <li class="seat">
+                            <button type="button" id="6B1" class="btn btn-success" ng-click="chooseSeat('6B1')">6B</button>
+                        </li>
+                        <li class="seat">
+                            <button type="button" id="6C1" class="way btn btn-success" ng-click="chooseSeat('6C1')">6C</button>
+                        </li>
+                        <li class="seat">
+                            <button type="button" id="6D1" class="btn btn-success" ng-click="chooseSeat('6D1')">6D</button>
+                        </li>
+                        <li class="seat">
+                            <button type="button" id="6E1" class="btn btn-success" ng-click="chooseSeat('6E1')">6E</button>
+                        </li>
+                        <li class="seat">
+                            <button type="button" id="6F1" class="btn btn-success" ng-click="chooseSeat('6F1')">6F</button>
+                        </li>
+                    </ol>
+                </li>
+                <li class="row row--7">
+                    <ol class="seats" type="A">
+                        <li class="seat">
+                            <button type="button" id="7A1" class="btn btn-success" ng-click="chooseSeat('7A1')">7A</button>
+                        </li>
+                        <li class="seat">
+                            <button type="button" id="7B1" class="btn btn-success" ng-click="chooseSeat('7B1')">7B</button>
+                        </li>
+                        <li class="seat">
+                            <button type="button" id="7C1" class="way btn btn-success" ng-click="chooseSeat('7C1')">7C</button>
+                        </li>
+                        <li class="seat">
+                            <button type="button" id="7D1" class="btn btn-success" ng-click="chooseSeat('7D1')">7D</button>
+                        </li>
+                        <li class="seat">
+                            <button type="button" id="7E1" class="btn btn-success" ng-click="chooseSeat('7E1')">7E</button>
+                        </li>
+                        <li class="seat">
+                            <button type="button" id="7F1" class="btn btn-success" ng-click="chooseSeat('7F1')">7F</button>
+                        </li>
+                    </ol>
+                </li>
+                <li class="row row--8">
+                    <ol class="seats" type="A">
+                        <li class="seat">
+                            <button type="button" id="8A1" class="btn btn-success" ng-click="chooseSeat('8A1')">8A</button>
+                        </li>
+                        <li class="seat">
+                            <button type="button" id="8B1" class="btn btn-success" ng-click="chooseSeat('8B1')">8B</button>
+                        </li>
+                        <li class="seat">
+                            <button type="button" id="8C1" class="way btn btn-success" ng-click="chooseSeat('8C1')">8C</button>
+                        </li>
+                        <li class="seat">
+                            <button type="button" id="8D1" class="btn btn-success" ng-click="chooseSeat('8D1')">8D</button>
+                        </li>
+                        <li class="seat">
+                            <button type="button" id="8E1" class="btn btn-success" ng-click="chooseSeat('8E1')">8E</button>
+                        </li>
+                        <li class="seat">
+                            <button type="button" id="8F1" class="btn btn-success" ng-click="chooseSeat('8F1')">8F</button>
+                        </li>
+                    </ol>
+                </li>
+                <li class="row row--9">
+                    <ol class="seats" type="A">
+                        <li class="seat">
+                            <button type="button" id="9A1" class="btn btn-success" ng-click="chooseSeat('9A1')">9A</button>
+                        </li>
+                        <li class="seat">
+                            <button type="button" id="9B1" class="btn btn-success" ng-click="chooseSeat('9B1')">9B</button>
+                        </li>
+                        <li class="seat">
+                            <button type="button" id="9C1" class="way btn btn-success" ng-click="chooseSeat('9C1')">9C</button>
+                        </li>
+                        <li class="seat">
+                            <button type="button" id="9D1" class="btn btn-success" ng-click="chooseSeat('9D1')">9D</button>
+                        </li>
+                        <li class="seat">
+                            <button type="button" id="9E1" class="btn btn-success" ng-click="chooseSeat('9E1')">9E</button>
+                        </li>
+                        <li class="seat">
+                            <button type="button" id="9F1" class="btn btn-success" ng-click="chooseSeat('9F1')">9F</button>
+                        </li>
+                    </ol>
+                </li>
+                <li class="row row--10">
+                    <ol class="seats" type="A">
+                        <li class="seat">
+                            <button type="button" id="10A1" class="btn_43 btn btn-success" ng-click="chooseSeat('10A1')">10A</button>
+                        </li>
+                        <li class="seat">
+                            <button type="button" id="10B1" class="btn_43 btn btn-success" ng-click="chooseSeat('10B1')">10B</button>
+                        </li>
+                        <li class="seat">
+                            <button type="button" id="10C1" class="way btn_43 btn btn-success" ng-click="chooseSeat('10C1')">10C</button>
+                        </li>
+                        <li class="seat">
+                            <button type="button" id="10D1" class="btn_43 btn btn-success" ng-click="chooseSeat('10D1')">10D</button>
+                        </li>
+                        <li class="seat">
+                            <button type="button" id="10E1" class="btn_43 btn btn-success" ng-click="chooseSeat('10E1')">10E</button>
+                        </li>
+                        <li class="seat">
+                            <button type="button" id="10F1" class="btn_43 btn btn-success" ng-click="chooseSeat('10F1')">10F</button>
+                        </li>
+                    </ol>
+                </li>
+            </ol>
+            <div class="exit exit--back fuselage" style="bottom: 40px;">
+            </div>
+            <div class="exit right fuselage" style="bottom: 40px;">
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <div id="flight2">
+        <h3 style="text-align: center;">Chọn ghế cho chiều khởi hành từ <span style="color: red;">{{placefrom2}}</span> đến <span style="color: red;">{{placeto2}}</span> ngày <span style="color: orange;">{{date2}}</span></h3>
+        <div class="plane" style="border-style: solid;">
+            <div class="cockpit">
+                <h1 style="color: blue; font-weight: bold; margin-top: 100px;  font-size: 30px;">CABIN</h1>
+            </div>
+            <div class="exit exit--front fuselage">
+            </div>
+            <div class="exit right fuselage">
+            </div>
+            <ol class="cabin fuselage">
+                <li class="row row--1">
+                    <ol class="seats" type="A">
+                        <li class="seat">
+                            <button type="button" id="1A2" class="btn btn-success" ng-click="chooseSeat('1A2')">1A</button>
+                        </li>
+                        <li class="seat">
+                            <button type="button" id="1B2" class="btn btn-success" ng-click="chooseSeat('1B2')">1B</button>
+                        </li>
+                        <li class="seat">
+                            <button type="button" id="1C2" class="way btn btn-success" ng-click="chooseSeat('1C2')">1C</button>
+                        </li>
+                        <li class="seat">
+                            <button type="button" id="1D2" class="btn btn-success" ng-click="chooseSeat('1D2')">1D</button>
+                        </li>
+                        <li class="seat">
+                            <button type="button" id="1E2" class="btn btn-success" ng-click="chooseSeat('1E2')">1E</button>
+                        </li>
+                        <li class="seat">
+                            <button type="button" id="1F2" class="btn btn-success" ng-click="chooseSeat('1F2')">1F</button>
+                        </li>
+                    </ol>
+                </li>
+                <li class="row row--2">
+                    <ol class="seats" type="A">
+                        <li class="seat">
+                            <button type="button" id="2A2" class="btn btn-success" ng-click="chooseSeat('2A2')">2A</button>
+                        </li>
+                        <li class="seat">
+                            <button type="button" id="2B2" class="btn btn-success" ng-click="chooseSeat('2B2')">2B</button>
+                        </li>
+                        <li class="seat">
+                            <button type="button" id="2C2" class="way btn btn-success" ng-click="chooseSeat('2C2')">2C</button>
+                        </li>
+                        <li class="seat">
+                            <button type="button" id="2D2" class="btn btn-success" ng-click="chooseSeat('2D2')">2D</button>
+                        </li>
+                        <li class="seat">
+                            <button type="button" id="2E2" class="btn btn-success" ng-click="chooseSeat('2E2')">2E</button>
+                        </li>
+                        <li class="seat">
+                            <button type="button" id="2F2" class="btn btn-success" ng-click="chooseSeat('2F2')">2F</button>
+                        </li>
+                    </ol>
+                </li>
+                <li class="row row--3">
+                    <ol class="seats" type="A">
+                        <li class="seat">
+                            <button type="button" id="3A2" class="btn btn-success" ng-click="chooseSeat('3A2')">3A</button>
+                        </li>
+                        <li class="seat">
+                            <button type="button" id="3B2" class="btn btn-success" ng-click="chooseSeat('3B2')">3B</button>
+                        </li>
+                        <li class="seat">
+                            <button type="button" id="3C2" class="way btn btn-success" ng-click="chooseSeat('3C2')">3C</button>
+                        </li>
+                        <li class="seat">
+                            <button type="button" id="3D2" class="btn btn-success" ng-click="chooseSeat('3D2')">3D</button>
+                        </li>
+                        <li class="seat">
+                            <button type="button" id="3E2" class="btn btn-success" ng-click="chooseSeat('3E2')">3E</button>
+                        </li>
+                        <li class="seat">
+                            <button type="button" id="3F2" class="btn btn-success" ng-click="chooseSeat('3F2')">3F</button>
+                        </li>
+                    </ol>
+                </li>
+                <li class="row row--4">
+                    <ol class="seats" type="A">
+                        <li class="seat">
+                            <button type="button" id="4A2" class="btn btn-success" ng-click="chooseSeat('4A2')">4A</button>
+                        </li>
+                        <li class="seat">
+                            <button type="button" id="4B2" class="btn btn-success" ng-click="chooseSeat('4B2')">4B</button>
+                        </li>
+                        <li class="seat">
+                            <button type="button" id="4C2" class="way btn btn-success" ng-click="chooseSeat('4C2')">4C</button>
+                        </li>
+                        <li class="seat">
+                            <button type="button" id="4D2" class="btn btn-success" ng-click="chooseSeat('4D2')">4D</button>
+                        </li>
+                        <li class="seat">
+                            <button type="button" id="4E2" class="btn btn-success" ng-click="chooseSeat('4E2')">4E</button>
+                        </li>
+                        <li class="seat">
+                            <button type="button" id="4F2" class="btn btn-success" ng-click="chooseSeat('4F2')">4F</button>
+                        </li>
+                    </ol>
+                </li>
+                <li class="row row--5">
+                    <ol class="seats" type="A">
+                        <li class="seat">
+                            <button type="button" id="5A2" class="btn btn-success" ng-click="chooseSeat('5A2')">5A</button>
+                        </li>
+                        <li class="seat">
+                            <button type="button" id="5B2" class="btn btn-success" ng-click="chooseSeat('5B2')">5B</button>
+                        </li>
+                        <li class="seat">
+                            <button type="button" id="5C2" class="way btn btn-success" ng-click="chooseSeat('5C2')">5C</button>
+                        </li>
+                        <li class="seat">
+                            <button type="button" id="5D2" class="btn btn-success" ng-click="chooseSeat('5D2')">5D</button>
+                        </li>
+                        <li class="seat">
+                            <button type="button" id="5E2" class="btn btn-success" ng-click="chooseSeat('5E2')">5E</button>
+                        </li>
+                        <li class="seat">
+                            <button type="button" id="5F2" class="btn btn-success" ng-click="chooseSeat('5F2')">5F</button>
+                        </li>
+                    </ol>
+                </li>
+                <li class="row row--6">
+                    <ol class="seats" type="A">
+                        <li class="seat">
+                            <button type="button" id="6A2" class="btn btn-success" ng-click="chooseSeat('6A2')">6A</button>
+                        </li>
+                        <li class="seat">
+                            <button type="button" id="6B2" class="btn btn-success" ng-click="chooseSeat('6B2')">6B</button>
+                        </li>
+                        <li class="seat">
+                            <button type="button" id="6C2" class="way btn btn-success" ng-click="chooseSeat('6C2')">6C</button>
+                        </li>
+                        <li class="seat">
+                            <button type="button" id="6D2" class="btn btn-success" ng-click="chooseSeat('6D2')">6D</button>
+                        </li>
+                        <li class="seat">
+                            <button type="button" id="6E2" class="btn btn-success" ng-click="chooseSeat('6E2')">6E</button>
+                        </li>
+                        <li class="seat">
+                            <button type="button" id="6F2" class="btn btn-success" ng-click="chooseSeat('6F2')">6F</button>
+                        </li>
+                    </ol>
+                </li>
+                <li class="row row--7">
+                    <ol class="seats" type="A">
+                        <li class="seat">
+                            <button type="button" id="7A2" class="btn btn-success" ng-click="chooseSeat('7A2')">7A</button>
+                        </li>
+                        <li class="seat">
+                            <button type="button" id="7B2" class="btn btn-success" ng-click="chooseSeat('7B2')">7B</button>
+                        </li>
+                        <li class="seat">
+                            <button type="button" id="7C2" class="way btn btn-success" ng-click="chooseSeat('7C2')">7C</button>
+                        </li>
+                        <li class="seat">
+                            <button type="button" id="7D2" class="btn btn-success" ng-click="chooseSeat('7D2')">7D</button>
+                        </li>
+                        <li class="seat">
+                            <button type="button" id="7E2" class="btn btn-success" ng-click="chooseSeat('7E2')">7E</button>
+                        </li>
+                        <li class="seat">
+                            <button type="button" id="7F2" class="btn btn-success" ng-click="chooseSeat('7F2')">7F</button>
+                        </li>
+                    </ol>
+                </li>
+                <li class="row row--8">
+                    <ol class="seats" type="A">
+                        <li class="seat">
+                            <button type="button" id="8A2" class="btn btn-success" ng-click="chooseSeat('8A2')">8A</button>
+                        </li>
+                        <li class="seat">
+                            <button type="button" id="8B2" class="btn btn-success" ng-click="chooseSeat('8B2')">8B</button>
+                        </li>
+                        <li class="seat">
+                            <button type="button" id="8C2" class="way btn btn-success" ng-click="chooseSeat('8C2')">8C</button>
+                        </li>
+                        <li class="seat">
+                            <button type="button" id="8D2" class="btn btn-success" ng-click="chooseSeat('8D2')">8D</button>
+                        </li>
+                        <li class="seat">
+                            <button type="button" id="8E2" class="btn btn-success" ng-click="chooseSeat('8E2')">8E</button>
+                        </li>
+                        <li class="seat">
+                            <button type="button" id="8F2" class="btn btn-success" ng-click="chooseSeat('8F2')">8F</button>
+                        </li>
+                    </ol>
+                </li>
+                <li class="row row--9">
+                    <ol class="seats" type="A">
+                        <li class="seat">
+                            <button type="button" id="9A2" class="btn btn-success" ng-click="chooseSeat('9A2')">9A</button>
+                        </li>
+                        <li class="seat">
+                            <button type="button" id="9B2" class="btn btn-success" ng-click="chooseSeat('9B2')">9B</button>
+                        </li>
+                        <li class="seat">
+                            <button type="button" id="9C2" class="way btn btn-success" ng-click="chooseSeat('9C2')">9C</button>
+                        </li>
+                        <li class="seat">
+                            <button type="button" id="9D2" class="btn btn-success" ng-click="chooseSeat('9D2')">9D</button>
+                        </li>
+                        <li class="seat">
+                            <button type="button" id="9E2" class="btn btn-success" ng-click="chooseSeat('9E2')">9E</button>
+                        </li>
+                        <li class="seat">
+                            <button type="button" id="9F2" class="btn btn-success" ng-click="chooseSeat('9F2')">9F</button>
+                        </li>
+                    </ol>
+                </li>
+                <li class="row row--10">
+                    <ol class="seats" type="A">
+                        <li class="seat">
+                            <button type="button" id="10A2" class="btn_43 btn btn-success" ng-click="chooseSeat('10A2')">10A</button>
+                        </li>
+                        <li class="seat">
+                            <button type="button" id="10B2" class="btn_43 btn btn-success" ng-click="chooseSeat('10B2')">10B</button>
+                        </li>
+                        <li class="seat">
+                            <button type="button" id="10C2" class="way btn_43 btn btn-success" ng-click="chooseSeat('10C2')">10C</button>
+                        </li>
+                        <li class="seat">
+                            <button type="button" id="10D2" class="btn_43 btn btn-success" ng-click="chooseSeat('10D2')">10D</button>
+                        </li>
+                        <li class="seat">
+                            <button type="button" id="10E2" class="btn_43 btn btn-success" ng-click="chooseSeat('10E2')">10E</button>
+                        </li>
+                        <li class="seat">
+                            <button type="button" id="10F2" class="btn_43 btn btn-success" ng-click="chooseSeat('10F2')">10F</button>
+                        </li>
+                    </ol>
+                </li>
+            </ol>
+            <div class="exit exit--back fuselage" style="bottom: 40px;">
+            </div>
+            <div class="exit right fuselage" style="bottom: 40px;">
+            </div>
+        </div>
+    </div>
+    <div id="seatDialog" class="modal fade" role="dialog" data-backdrop="static" data-keyboard="false">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-body" style="text-align:center">
+                <div class="loader"></div>
+                <p>Đang tải dữ liệu ghế...</p>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+    <button type="button" class="btn btn-warning"  style="display: inline-block;" ng-click="next()" id="next">Tiếp tục</button>

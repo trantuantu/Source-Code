@@ -1,0 +1,33 @@
+<div class="container" ng-controller="luggageCtrl"  style="height: 60%">
+	<h3 style="color:#006666; font-weight: bold;">Hành lý trả trước</h3>
+	<div style="padding: 5px">
+	<p style="display: inline">Tổng cộng </p><h3 id="totalCost" style="color:red; display: inline">0 VND</h3>
+	</div>
+ 	<button type="button" class="btn btn-info" ng-click="bookLuggage()" id="bLuggage">{{bookBtn}}</button>
+ 	<button type="button" class="btn btn-warning" ng-click="addLuggage()" id="next">Tiếp tục</button>
+	<div id="flight1">
+		<h3>Chuyến bay từ <span style="color: red;">{{from1}}</span> đến <span style="color: red;">{{to1}}</span> ngày <span style="color: orange;"> {{date1}}</span></h3>
+		<div class="form-group">
+		  <label>Số lượng gói hành lý</label>
+		  <input type="number" class="form-control" id="numLuggage1" value="1" min=0 oninput="validity.valid||(value='');">
+		</div>
+	</div>
+	<div id="flight2">
+		<h3>Chuyến bay từ <span style="color: red;">{{from2}}</span> đến <span style="color: red;">{{to2}}</span> ngày <span style="color: orange;"> {{date2}}</span></h3>
+		<div class="form-group">
+		  <label>Số lượng gói hành lý</label>
+		  <input type="number" class="form-control" id="numLuggage2" value="1" min=0 oninput="validity.valid||(value='');">
+		</div>
+	</div>
+	<div id="luggageDialog" class="modal fade" role="dialog" data-backdrop="static" data-keyboard="false">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-body" style="text-align:center">
+                <div class="loader"></div>
+                <p>Đang tải dữ liệu...</p>
+            </div>
+        </div>
+    </div>
+</div>
+</div>

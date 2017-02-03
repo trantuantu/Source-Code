@@ -1,0 +1,16 @@
+
+<div style="height: 70%; padding: 30px">
+      <ul class="nav nav-pills">
+  <li role="presentation"  id="tab1"><a style="color: black" href="#/flightschedule">Lịch bay</a></li>
+  <li role="presentation" class="" id="tab2" ><a href="#/flight"  style ="color: black">Chuyến bay</a></li>
+  <li role="presentation" class="" id="tab3"><a href="#/ticketmanage" style="color: black">Quản lý đặt chỗ</a></li>
+  <li role="presentation" class="active" class="" id="tab4"><a href="#/notify">Thông báo</a></li>
+</ul>
+<div ng-controller="NotifyCtrl">
+<p></p>
+    <div class="form-group">
+      <label for="comment">Notification Message</label>
+      <textarea class="form-control" rows="5" id="comment"></textarea>
+    </div>
+    <button type="button" class="btn btn-success" ng-click="sendMessage()">Send</button>
+</div>

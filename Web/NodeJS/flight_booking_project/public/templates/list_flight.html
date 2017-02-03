@@ -1,0 +1,84 @@
+<div class="container" ng-controller="FlightCtrl">
+    <div class="col-md-9">
+        <h3 style="color:#006666; font-weight: bold;">Danh sách chuyến bay</h3>
+        <div ng-repeat="form in data">
+            <br>
+            <form>
+                <h3>Khởi hành từ <span style="color: red;">{{form[1]}}</span> đến <span style="color: red;">{{form[2]}}</span></h3>
+                <div>
+                    <input type="image" src="images/backward.png" style="width: 32px; height: 20px; float: left; margin-top: 20px" name="" ng-click="backward7daysClick(form[4])" id={{form[7]}}>
+                    <button type="button" class="btn btn-default" style="width: 100px; margin-left: 5px;" ng-repeat="infor in form[5]" ng-click="chooseDate(infor)" id="{{infor.Ngay}}t{{infor.Type}}" on-finish-render="ngRepeatFinished">
+                        <p style="font-weight: bold; color: #006666;">{{infor.Ngay}}</p>
+                        <p style="color: red; font-size: 13px;">{{infor.SmallestTicketsPrice}}</p>
+                    </button>
+                    <input type="image" src="images/toward.png" style="width: 32px; height: 20px; margin-top: 10px;" name="" ng-click="toward7daysClick(form[4])" id={{form[8]}}>
+                </div>
+                <br>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Mã số</th>
+                            <th>Ngày bay</th>
+                            <th>Giờ khởi hành</th>
+                            <th>Thời gian bay</th>
+                            <th>Hạng</th>
+                            <th>Mức giá</th>
+                            <th>Giá vé</th>
+                        </tr>
+                    </thead>
+                    <tbody id={{form[6]}}>
+                        <tr ng-repeat="flight in form[0]" id={{flight.Ma}} on-finish-render="ngRepeatFinished1">
+                            <td id="id">{{flight.Ma}}</td>
+                            <td id="date">{{flight.Ngay}}</td>
+                            <td id="giobay">{{flight.Gio}}</td>
+                            <td id="thoigianbay">{{flight.ThoiGianBay}}</td>
+                            <td id="hang">{{flight.Hang}}</td>
+                            <td id="mucgia">{{flight.MucGia}}</td>
+                            <td id="giave">{{flight.GiaBan}}</td>
+                            <td align="center">
+                                <input type="radio" id="r{{flight.Ma}}{{flight.Ngay}}{{flight.Hang}}{{flight.MucGia}}" name="optradio" ng-click="choose(flight, form[4])">Chọn
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </form>
+        </div>
+    <div id="bookDialog" class="modal fade" role="dialog" data-backdrop="static" data-keyboard="false">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-body" style="text-align:center">
+                <div class="loader"></div>
+                <p>Đang tải dữ liệu...</p>
+            </div>
+        </div>
+         </div>
+    </div>
+    </div>
+    <div style="display: inline-block; border-style:none none none solid;" class="col-md-3">
+        <h3 style="color:#006666; font-weight: bold;">Tóm tắt chuyến đi</h3>
+        <p>Tổng cộng</p>
+        <h3 style="color:red; padding-top: 0px;">{{totalCost}}</h3>
+        <p>Số hành khách: {{passengers}}</p>
+        <div style="border-style:solid none solid none; padding: 5px; border-width: 1px;">
+            <p style="color:#006666; font-weight: bold;">Chiều đi</p>
+            <p>Hạng vé: {{ticketLevel1}}</p>
+            <p>Chuyến bay: {{flightCode1}}</p>
+            <p>Khởi hành: {{from1}}</p>
+            <p>Nơi đến: {{to1}}</p>
+            <p>Thời gian khởi hành: {{startDate1}}</p>
+            <p>Thời gian bay: {{duration1}}</p>
+        </div>
+        <div style="padding: 5px;" id="returnFlight">
+            <p style="color:#006666; font-weight: bold;">Chiều về</p>
+            <p>Hạng vé: {{ticketLevel2}}</p>
+            <p>Chuyến bay: {{flightCode2}}</p>
+            <p>Khởi hành: {{from2}}</p>
+            <p>Nơi đến: {{to2}}</p>
+            <p>Thời gian khởi hành: {{startDate2}}</p>
+            <p>Thời gian bay: {{duration2}}</p>
+        </div>
+        <button id="btn_dat_ve" style="float: right;" type="submit" class="btn btn-warning" ng-click="changeToPassenger()" disabled="true">Tiếp tục</a>
+        </button>
+    </div>
+</div>

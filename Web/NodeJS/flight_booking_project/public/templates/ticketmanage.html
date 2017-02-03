@@ -1,0 +1,239 @@
+ <div style="padding: 30px;">
+   <ul class="nav nav-pills">
+  <li role="presentation" id="tab1"><a style ="color: black" href="#/flightschedule">Lịch bay</a></li>
+  <li role="presentation" class="" id="tab2" ><a href="#/flight"  style ="color: black">Chuyến bay</a></li>
+  <li role="presentation" class="active" class="" id="tab3"><a href="#/ticketmanage">Quản lý đặt chỗ</a></li>
+  <li role="presentation" class="" id="tab4"><a href="#/notify" style="color: black">Thông báo</a></li>
+</ul>
+<br>
+  <div class="dropdown col-xs-6 col-sm-4" style="padding-left: 0">
+        <select class="form-control" id = "viewMode">
+          <option style="background: #dcdcdc">Xem theo mã đặt chỗ</option>
+          <option style="background: #dcdcdc">Xem theo chuyến bay</option>
+      </select>
+  </div> 
+<br>
+<!--Code mode-->
+<table class="table table-striped" id="code">
+    <thead>
+      <tr>
+        <th>Mã đặt chỗ</th>
+        <th>Thời gian</th>
+        <th>Tổng tiền</th>
+        <th>Trạng thái</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="booking in bookingList">
+        <td class="col-md-2">{{booking.Ma}}</td>
+        <td class="col-md-2">{{booking.ThoiGianDatCho}}</td>
+        <td class="col-md-2">{{booking.TongTien}}</td>
+        <td class="col-md-2">{{booking.TrangThai}}</td>
+        <td align="right" class="col-md-4">
+        <button style="background:green; color:white" type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal1" ng-click="viewTicket(booking.Ma)">Xem vé</button>
+        <button style="background:green; color:white" type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal2" ng-click="viewPassenger(booking.Ma)">Xem hành khách</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+<!--AirFlight mode-->
+<table class="table table-striped" id="flight">
+    <thead>
+      <tr>
+        <th>Mã chuyến bay</th>
+        <th>Ngày</th>
+        <th>Giờ</th>
+        <th>Thời gian bay</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr ng-repeat="flight in listFlights"}>
+        <td class="id">{{flight.Ma}}</td>
+        <td class="date">{{flight.Ngay}}</td>
+        <td class="time">{{flight.Gio}}</td>
+        <td class="flightTime">{{flight.ThoiGianBay}}</td>
+        <td>
+        <button style="background:green; color:white" type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal" ng-click="viewTicketByFlight(flight.Ma, flight.Ngay)">Thông tin đặt chỗ</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+    <!-- Modal -->
+        <div id="myModal" class="modal fade" role="dialog">
+          <div class="modal-dialog modal-lg">     <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Danh sách đặt chỗ</h4>
+              </div>
+              <div class="modal-body">
+                <div class="form-group">
+                <table class="table table-striped">
+                    <thead>
+                      <tr>
+                        <th>Mã đặt chỗ</th>
+                        <th>Hạng</th>
+                        <th>Mức giá</th>
+                        <th>Giá bán</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                     <tr ng-repeat="ticket in Tickets">
+                        <td class="id">{{ticket.MaDatCho}}</td>
+                        <td class="id">{{ticket.Hang}}</td>
+                        <td class="id">{{ticket.MucGia}}</td>
+                        <td class="id">{{ticket.GiaBan}}</td>
+                        <td align="center"><button style="background:green; color:white" type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal2" ng-click="viewPassenger(ticket.MaDatCho)">Xem hành khách</button><button style="background:green; color:white" type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal3" ng-click="viewSeat(ticket.MaGhe, ticket.MaDatCho)">Xem ghế</button><button style="background:green; color:white" type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal4" ng-click="viewLuggage(ticket.MaHanhLy)">Xem hành lý</button></td>    
+                      </tr>
+                    </tbody>
+                  </table>
+              </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+              </div>
+          </div>
+        </div>
+        </div>
+    <!-- Modal -->
+         <!-- Modal -->
+        <div id="myModal1" class="modal fade" role="dialog">
+         <div class="modal-dialog modal-lg">    <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Thông tin vé</h4>
+              </div>
+              <div class="modal-body">
+                <div class="form-group">
+                 <table class="table table-striped">
+                    <thead>
+                      <tr>
+                        <th>Mã chuyến bay</th>
+                        <th>Ngày</th>
+                        <th>Hạng</th>
+                        <th>Mức giá</th>
+                        <th>Giá bán</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr ng-repeat="ticket in Tickets">
+                        <td class="id">{{ticket.MaChuyenBay}}</td>
+                        <td class="id">{{ticket.Ngay}}</td>
+                        <td class="id">{{ticket.Hang}}</td>
+                        <td class="id">{{ticket.MucGia}}</td>
+                        <td class="id">{{ticket.GiaBan}}</td>
+                        <td align="center"><button style="background:green; color:white" type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal3" ng-click="viewSeat(ticket.MaGhe, ticket.MaDatCho)">Xem ghế</button><button style="background:green; color:white" type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal4" ng-click="viewLuggage(ticket.MaHanhLy)">Xem hành lý</button></td>
+                      </tr>
+                    </tbody>
+                  </table>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Đóng</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+    <!-- Modal -->
+        <div id="myModal2" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Danh sách hành khách</h4>
+              </div>
+               <div class="modal-body">
+             <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th>Danh xưng</th>
+                    <th>Họ</th>
+                    <th>Tên</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr ng-repeat="passenger in Passengers">
+                    <td class="id">{{passenger.DanhXung}}</td>
+                    <td class="id">{{passenger.Ho}}</td>
+                    <td class="id">{{passenger.Ten}}</td>
+                    </tr>
+                  </tbody>
+                </table>
+                </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">
+                  Đóng
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+         <!-- Modal -->
+ <!-- Modal -->
+        <div id="myModal3" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Danh sách ghế</h4>
+              </div>
+              <div class="modal-body">
+             <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th>Số ghế</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr ng-repeat="seat in Seats">
+                    <td>{{seat}}</td>
+                    </tr>
+                  </tbody>
+                </table>
+                </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">
+                  Đóng
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+         <!-- Modal -->
+        <div id="myModal4" class="modal fade" role="dialog">
+          <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Thông tin hành lý</h4>
+              </div>
+              <div class="modal-body">
+             <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th>Số lượng</th>
+                    <th>Giá</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>{{number}}</td>
+                    <td>{{totalPrice}}</td>
+                    </tr>
+                  </tbody>
+                </table>
+                </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">
+                  Đóng
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>

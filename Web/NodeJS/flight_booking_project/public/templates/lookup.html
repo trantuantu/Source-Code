@@ -1,0 +1,41 @@
+<div class="container" ng-controller="LookupCtrl">
+<div class="col-md-8">
+ <h3 style="color:#006666; font-weight: bold;">Thông tin vé của bạn</h3>
+    <p>Tổng cộng</p>
+    <h3 style="color:red">{{totalCost}}</h3>
+    <p>Hành khách: {{passengers}}</p>
+    <div style="border-style:solid none solid none; padding: 5px; border-width: 1px;">
+        <p style="color:#006666; font-weight: bold;">Thông tin chuyến bay</p>
+        <p>Hạng vé: {{ticketLevel1}}</p>
+        <p>Chuyến bay: {{flightCode1}}</p>
+        <p>Khởi hành: {{from1}}</p>
+        <p>Nơi đến: {{to1}}</p>
+        <p>Ghế: {{seat1}}</p>
+        <p>Ngày khởi hành: {{startDate1}}</p>
+        <p>Giờ khởi hành: {{startTime1}}</p>
+        <p>Thời gian bay: {{duration1}}</p>
+        <p>Số gói hành lý: {{luggageNumber1}}</p>
+        <p>Giá vé: {{flightPrice1}}</p>
+        <p>Giá hành lý: {{luggagePrice1}}</p>
+    </div>
+    <div style="padding: 5px;" id="returnFlight">
+        <p style="color:#006666; font-weight: bold;">Thông tin chuyến bay</p>
+        <p>Hạng vé: {{ticketLevel2}}</p>
+        <p>Chuyến bay: {{flightCode2}}</p>
+        <p>Khởi hành: {{from2}}</p>
+        <p>Nơi đến: {{to2}}</p>
+        <p>Ghế: {{seat2}}</p>
+        <p>Ngày khởi hành: {{startDate2}}</p>
+        <p>Giờ khởi hành: {{startTime2}}</p>
+        <p>Thời gian bay: {{duration2}}</p>
+        <p>Số gói hành lý: {{luggageNumber2}}</p>
+        <p>Giá vé: {{flightPrice2}}</p>
+        <p>Giá hành lý: {{luggagePrice2}}</p>
+    </div>
+    </div>
+    <div class="col-md-4" style="text-align: center">
+        <qrcode data={{url}} size="200"></qrcode>
+        <br>
+        <p style="text-align: center;">Sử dụng QR code này để check-in tại sân bay hoặc tra cứu thông tin vé tức thì</p>
+    </div>
+</div>

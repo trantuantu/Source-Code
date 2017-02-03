@@ -1,0 +1,12 @@
+<div ng-controller="UserLoginCtrl" style="height: 70%; padding: 30px">
+	<div style="text-align:center;">
+	        <img id="imgfb" ng-src="{{facebook.fb_img}}" width="100" , height="100" , style="display: none; border-radius: 100px; margin: 0 auto">
+	        <p></p>
+	        <h5 id="fbname" style="font-weight: bold; margin: auto;">{{facebook.username}}</h5>
+	        <br>
+	        <!-- <input type="image" src="images/facebook.png" alt="Submit" value="login" > -->
+	        <div class="social-wrap a" style="text-align:center;">
+	            <button id="facebook" ng-click="facebookLogin()"  style="margin: 0 auto">Log in with Facebook</button>
+	        </div>
+	</div>
+</div>
