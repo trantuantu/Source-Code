@@ -1,0 +1,102 @@
+<div ng-controller="AccountCtrl"> 
+  <!-- catg header banner section -->
+  <section id="aa-catg-head-banner">
+    <img src="images/banner/banner-account.jpg" alt="fashion img">
+    <div class="aa-catg-head-banner-area">
+     <div class="container">
+      <div class="aa-catg-head-banner-content">
+        <h2>Account Page</h2>
+        <ol class="breadcrumb">
+          <li><a href="index.html">Home</a></li>                   
+          <li class="active">Account</li>
+        </ol>
+      </div>
+     </div>
+   </div>
+  </section>
+  <!-- / catg header banner section -->
+
+ <!-- Cart view section -->
+ <section id="aa-myaccount">
+   <div class="container">
+     <div class="row">
+       <div class="col-md-12">
+
+        <div class="aa-myaccount-area">         
+            <div class="row">
+             <div ng-show="error" class="alert alert-danger row">
+              <span>{{ error.message }}</span>
+              </div>
+              <div class="col-md-6">
+                <div class="aa-myaccount-login">
+                <h4>Login</h4>
+                 <form action="" class="aa-login-form" ng-submit="logIn()">
+      
+                  <label for="">Username or Email address<span>*</span></label>
+                   <input ng-model="login.username" type="text" placeholder="Username or email">
+                   <label for="">Password<span>*</span></label>
+                    <input ng-model="login.password" type="password" placeholder="Password">
+                    <button type="submit" class="aa-browse-btn">Login</button>
+                    <label class="rememberme" for="rememberme"><input type="checkbox" id="rememberme"> Remember me </label>
+                    <p class="aa-lost-password"><a href="#">Lost your password?</a></p>
+                  </form>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="aa-myaccount-register">                 
+                 <h4>Register</h4>
+                 <!--Register form with register submit function-->
+
+                 <form name = "myForm" id="register_form" action='/submit' ng-submit="register()" method="post" class="aa-login-form" >
+                    <label for="">Name<span>*</span></label>
+                   <input type="text" ng-model="user.name" required placeholder="Firstname Lastname" required
+    pattern="[A-Za-z0-9]+\s[A-Za-z0-9]+">
+                    <label for="">Bank ID<span>*</span></label>
+                    <input type="number" ng-model="user.bankid" required placeholder="Your bankID" style="width: 100%;">
+                    <br>
+                     <br>
+                    <label for="">Username or Email address<span>*</span></label>
+                    <!--Username Validation-->
+                    <input ng-model="user.username" type="text" name = "username"  username-validator id = "username" placeholder="Username or email">
+                    <div ng-if="myForm.username.$dirty">
+                        <div ng-messages="myForm.username.$error" class="validation-error">
+                            <div ng-message="required">Username required</div>
+                            <div ng-message="username">Username already in use</div>
+                        </div>
+                        <div ng-messages="myForm.username.$pending" class="validation-pending">
+                            <div ng-message="username">Checking username availability...</div>
+                        </div>
+                    </div>
+                    <!--Username Validation-->
+                    <span id="user-result"></span>
+                    <label for="">Password<span>*</span></label>
+                    <input ng-model="user.password" type="password"  required id = "pass" placeholder="Password">
+                     <span w3-test-directive-1 style="color:red" id="passstrength"></span>
+                     </br>
+                    <label for="">Confirm Password<span>*</span></label>
+                    <input ng-model="confirm" type="password" required password-validator name = "confirm" placeholder="Confirm Password">
+                     <div ng-if="myForm.confirm.$dirty">
+                        <div ng-messages="myForm.confirm.$error" class="validation-error">
+                            <div ng-message="required">Confirm password required</div>
+                            <div ng-message="confirm">Password not match</div>
+                        </div>
+                        <div ng-messages="myForm.confirm.$pending" class="validation-pending">
+                            <div ng-message="confirm">Checking confirm password</div>
+                        </div>
+                    </div>
+                    <!--Captcha-->
+                    <!-- <div class="g-recaptcha" data-sitekey="6LcX1v4SAAAAAOf5ffTwmpYwTx07N5Df5ztmSkde"></div><br>  -->
+                    <!--Captcha-->
+                    <button id="regSubmit" disable type="submit" class="aa-browse-btn">Register</button>                    
+                  </form>
+
+                </div>
+              </div>
+            </div>          
+         </div>
+       </div>
+     </div>
+   </div>
+ </section>
+ <!-- / Cart view section -->
+</div>

@@ -1,0 +1,148 @@
+#audioplayer{
+    width: 480px;
+    height: 60px;
+    margin: 50px auto auto auto;
+    border: solid;
+}
+#pButton{
+    height:60px; 
+    width: 60px;
+    border: none;
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+    float:left;
+    outline:none;
+}
+.play{background: url('http://www.alexkatz.me/codepen/images/play.png') ;}
+.pause{background: url('http://www.alexkatz.me/codepen/images/pause.png') ;}
+#timeline{
+    width: 400px;
+    height: 20px;
+    margin-top: 20px;
+    float: left;
+    border-radius: 15px;
+    background: rgba(0,0,0,.3);
+}
+#playhead{
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    margin-top: 1px;
+    background: rgba(0, 0, 0,1);
+
+}
+ #map {
+    height: 100%;
+}
+    /* Optional: Makes the sample page fill the window. */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+input[type='range'] {
+    -webkit-appearance: none !important;
+    margin:0px;
+    padding:0px;
+    background: #000;
+    height:13px;
+    border-bottom:#333 1px solid;
+}
+input[type='range']::-ms-fill-lower  {
+    background:#000;
+}
+input[type='range']::-ms-fill-upper  {
+    background:#000;
+}
+input[type='range']::-moz-range-track {
+    border:none;
+    background: #000;
+}
+input[type='range']::-webkit-slider-thumb {
+    -webkit-appearance: none !important;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    margin-top: 1px;
+    background: rgba(0, 0, 0,1);
+}
+input[type='range']::-moz-range-thumb {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    margin-top: 1px;
+    background: rgba(0, 0, 0,1);
+}
+input[type='range']::-ms-thumb {
+    -webkit-appearance: none !important;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    margin-top: 1px;
+    background: rgba(0, 0, 0,1);
+}
+#activityList thead {
+    width: 100%;
+}
+
+#activityList tbody {
+    display: block;
+}
+#activityList td{
+    width: 100%;
+}
+
+#tableList thead {
+    width: 50px;
+    
+}
+#tableList tbody {
+    margin-top: 50px;
+    margin-left: 50px;
+    height: 300px;
+    overflow-y: auto;
+    width: 200px;
+}
+#tableList tbody tr {
+    height: 50px;
+    width: 200px;
+}
+#tableList tbody {
+    display: block;
+}
+#tableList td{
+    width: 200px;
+}
+
+
+@media (max-height: 768px) {
+  #lAct {
+    top: 153px;
+  }
+  #activityList tbody {
+    height: 153px;
+    overflow-y: auto;
+    width: 100%;
+    }
+}
+@media (max-height: 992px) {
+  #lAct {
+    top: 198px;
+  }
+  #activityList tbody {
+    height: 200px;
+    overflow-y: auto;
+    width: 100%;
+    }
+}
+@media (max-height: 1080px) {
+  #lAct {
+    top: 230px;
+  }
+  #activityList tbody {
+    height: 300px;
+    overflow-y: auto;
+    width: 100%;
+    }
+ }

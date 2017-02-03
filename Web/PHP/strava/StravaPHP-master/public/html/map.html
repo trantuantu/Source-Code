@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+        <meta charset="utf-8">
+        <title>Animating Symbols</title>
+        <link rel="stylesheet" href="../../public/css/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAav1VAkKDXM1RZU3nvIkvLC0KOpEpKm1g&libraries=drawing,geometry">
+        </script>
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.10/angular-ui-router.js"></script>
+        <script src="../js/angularApp.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">     
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    </head>
+    <body ng-app="live_score" ng-controller="mapCtrl">
+        <div id="map"></div>
+        <div id ="audioplayer">
+            <div id="seeker">
+                <button id="pButton" class="pause" ></button>
+                <input id="timeline" type="range" min="0" max="4474" value="0" step="1">          
+            </div>
+        </div>
+<!--        <div id="list">
+            
+        </div>-->
+        
+        <table class="table table-fixed" id="tableList" >
+            <tbody>
+                <tr ng-repeat="user in listUser" style="background-color: #FFA500; color:#ffffff;"><td><img  src= {{user.profile_image}} alt="Profile picture" style="width: 40px; height: 40px; border-radius: 50%"> {{user.name}}</td>
+                    <td style="width: 10px">
+                         <div class="checkbox">
+                            <input type="checkbox" id="{{user.id}}" onclick="return OptionsSelected(this)">
+                          </div>
+                    </td>
+                </tr> 
+            </tbody> 
+        </table>
+    </body>
+</html>

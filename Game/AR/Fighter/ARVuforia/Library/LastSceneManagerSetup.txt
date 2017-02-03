@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/YuGiOh.unity
+  isLoaded: 1
+  isActive: 1

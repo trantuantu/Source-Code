@@ -1,0 +1,14 @@
+<div class="col-md-5 col-sm-5 col-xs-12" ng-show="images.length">                              
+	<div class="aa-product-view-slider">                                
+		<div id="demo-1" class="simpleLens-gallery-container">
+			<div class="simpleLens-container">
+				<div class="simpleLens-big-image-container"><img ng-src="images/products/{{images[gallery.current].image}}" class="simpleLens-big-image"></div>
+			</div>
+			<div class="simpleLens-thumbnails-container" style="margin-top:40px">
+				<li class="small-image pull-left thumbnail" style="width: 70px" ng-repeat="image in images">
+			      <a href ng-click="gallery.setCurrent($index)"><img class="simpleLens-thumbnail-wrapper" style="max-width:100%" ng-src="images/products/{{image.image}}" /></a>
+			    </li>
+			</div>
+		</div>
+	</div>
+</div>

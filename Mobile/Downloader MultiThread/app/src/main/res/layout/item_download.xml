@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:gravity="center"
+    android:background="#808080"
+    android:id="@+id/item">
+<ImageView
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:id="@+id/imgLogo"
+    android:src="@drawable/logo" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:orientation="vertical"
+                android:gravity="left|center_vertical"
+                android:layout_weight="50"
+                android:paddingLeft="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="File Name"
+                    android:textSize="16dp"
+                    android:textColor="#ffffff"
+                    android:id="@+id/txtFileName" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Title1"
+                    android:textSize="12dp"
+                    android:textColor="#ffffff"
+                    android:id="@+id/txtTitle1" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Title2"
+                    android:textSize="12dp"
+                    android:textColor="#ffffff"
+                    android:id="@+id/txtTitle2" />
+
+                <RatingBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ratingBar"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:rating="3"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/btnLayout">
+                <com.example.tuantu.downloader.MyView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/btnDown"
+                    android:layout_gravity="center"/>
+                <com.example.tuantu.downloader.MyView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/btnStop"
+                    android:layout_gravity="center"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:gravity="center"
+           >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:id="@+id/prog"
+                android:layout_weight="20"
+                android:visibility="visible">
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/progress"
+                android:textColor="#ffffff"
+                android:paddingLeft="10dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>

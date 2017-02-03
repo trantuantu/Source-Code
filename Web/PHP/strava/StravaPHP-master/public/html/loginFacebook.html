@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.10/angular-ui-router.js"></script>
+        <script src="../js/angularApp.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    </head>
+    <body ng-app="live_score" ng-controller="fbCtrl" style="background-image: url(../images/backgroud.jpg); background-repeat: no-repeat; background-position: right top;">
+        <link rel="stylesheet" type="text/css" href="../bootstrap-social-gh-pages/assets/css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="../bootstrap-social-gh-pages/assets/css/font-awesome.css">
+        <link rel="stylesheet" type="text/css" href="../bootstrap-social-gh-pages/bootstrap-social.css">
+        <link rel="stylesheet"  type="text/css" href="../bootstrap-social-gh-pages/bootstrap-social.css">
+        <div style="display: inline-block; position: absolute; top: 50%; left:50%">
+            <a ng-click="loginFacebook()" id="btnFacebook" class="btn btn-block btn-social btn-facebook"  role="button">
+                <span class="fa fa-facebook"> </span> Login with Facebook
+            </a>
+        </div>
+    </body>
+</html>

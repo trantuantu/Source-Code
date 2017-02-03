@@ -1,0 +1,68 @@
+<!-- catg header banner section -->
+<section id="aa-catg-head-banner">
+ <img src="images/banner/banner-products.jpg" alt="fashion img">
+ <div class="aa-catg-head-banner-area">
+   <div class="container">
+    <div class="aa-catg-head-banner-content">
+      <ol class="breadcrumb">
+      <li><a href="#/home">Home</a></li>         
+        <li><a href="#/product">Product</a></li>
+      </ol>
+    </div>
+  </div>
+</div>
+</section>
+<!-- / catg header banner section -->
+
+<!-- product category -->
+<section id="aa-product-details">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="aa-product-details-area">
+          <div class="aa-product-details-content">
+            <div class="row">
+              <!-- Modal view slider -->
+              <product-gallery></product-gallery>
+              <!-- Modal view content -->
+              <div class="col-md-7 col-sm-7 col-xs-12">
+                <div class="aa-product-view-content">
+                  <h3>{{product.name}}</h3>
+                  <div class="aa-price-block">
+                    <p>
+                      Starting BID: 
+                      <span class="aa-product-view-price">
+                        <strong>
+                          {{product.startingbid}}
+                        </strong>
+                      </span>
+                    </p>
+                    <p class="aa-product-avilability">Time left: <span>{{timeLeft}}</span></p>
+                  </div>
+                  <form class="form-inline" ng-submit="submitAution()">
+                    <input type="number" class="form-control" placeholder="Aution Price (VND)" ng-model="newPrice">
+                    <button type="submit" class="btn btn-danger">Place BID</button>
+                  </form>
+                  <p ng-show="errorMessage != ''" style="color:red; margin-top:20px;">{{errorMessage}}</p>
+
+                  <a href="#" class="J-share btn btn-info" role="button" data-service="facebook"
+                      style="margin-top:20px; margin-right:25px;">
+                    Share on Facebook
+                  </a>
+                  <a href="#" class="J-share btn btn-info" role="button" data-service="twitter"
+                      style="margin-top:20px;">
+                    Share on Twitter
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="aa-product-details-bottom">
+          <product-tabs></product-tabs>
+        </div>
+        </div>  
+      </div>
+    </div>
+</div>
+</section>
+<!-- / product category -->

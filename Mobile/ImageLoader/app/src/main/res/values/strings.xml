@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">ImageLoader</string>
+    <string name="action_settings">Settings</string>
+    <string-array name="url" formatted="false">
+        <item>http://worldartsme.com/images/pokemon-characters-clipart-1.jpg</item>
+        <item>https://thecliparts.com/wp-content/uploads/2016/05/pokemon-clip-art-free-animations.jpg</item>
+        <item>http://www.picgifs.com/clip-art/cartoons/pokemon/clip-art-pokemon-291183.jpg</item>
+        <item>http://images6.fanpop.com/image/photos/36100000/Pok-mon-image-pokemon-36101130-500-500.jpg</item>
+        <item>http://www.picgifs.com/clip-art/cartoons/pokemon/clip-art-pokemon-345231.jpg</item>
+        <item>http://images.clipartpanda.com/pokemon-clip-art-clip-art-pokemon-820835.jpg</item>
+        <item>https://s-media-cache-ak0.pinimg.com/564x/0d/00/f4/0d00f4f62f0329d7d637a4ac75c14198.jpg</item>
+        <item>http://orig02.deviantart.net/c6c9/f/2014/288/f/7/129_warperch_by_zerudez-d82w4c4.png</item>
+        <item>https://sickr.files.wordpress.com/2012/01/keldeo_pokemon.png</item>
+        <item>http://vignette2.wikia.nocookie.net/pokemon/images/8/8e/074Geodude_OS_anime.png/revision/latest?cb=20141014222742</item>
+        <item>http://www.picgifs.com/clip-art/cartoons/pokemon/clip-art-pokemon-026640.jpg</item>
+        <item>http://www.picgifs.com/clip-art/cartoons/pokemon/clip-art-pokemon-610997.jpg</item>
+        <item>http://images4.fanpop.com/image/photos/15700000/Lugia-pokemon-soulsilver-15701917-500-500.jpg</item>
+        <item>https://lh5.googleusercontent.com/--SSwzs1VDXs/VNDZt63AXeI/AAAAAAAAATk/uHLa895ESKo/Pokemon-Heliolisk.png</item>
+        <item>http://cdn3.volusion.com/o37eo.toug5/v/vspfiles/photos/pokemon-4904810498186-2.jpg</item>
+        <item>http://66.media.tumblr.com/a024d378f50fe2c6082773185d071372/tumblr_inline_nocmcaq43Y1r7cjq2_500.png</item>
+        <item>http://picture.playpark.vn/Img/Pokemon-Sun-Moon-Dated_Starters_001_pp_610.jpg</item>
+        <item>http://www.picgifs.com/clip-art/cartoons/pokemon/clip-art-pokemon-216966.jpg</item>
+        <item>http://images6.fanpop.com/image/photos/38500000/Pokemon-pokemon-38546873-500-500.jpg</item>
+        <item>http://picture.playpark.vn/Img/Mewtwo2_pp_697.jpg</item>
+    </string-array>
+</resources>

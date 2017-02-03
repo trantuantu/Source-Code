@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Week6</string>
+    <string name="action_settings">Settings</string>
+    <string-array name="choices">
+        <item>Alpha</item>
+        <item>Bravo</item>
+        <item>Charlie</item>
+    </string-array>
+</resources>
