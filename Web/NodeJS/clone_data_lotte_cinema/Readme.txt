@@ -1,8 +1,11 @@
+USAGE:
+This application use to clone data from lotte cinema web page https://lottecinemavn.com/vi-vn/default.aspx
+SPECS:
 Backend: NodeJS (Express framework)
 Front-end: Javascript (AngularJS framework)
 Database: Mongod
 Technologies: Ajax, JQuery, HTML DOMs, Cheerio, Express request
-
+START PROGRAM:
 Install NodeJS, Mongod, npm
 Step 1: Create directory C:\data\db
 Step 2: Open cmd and use this command to open mongod: mongod --storageEngine=mmapv1

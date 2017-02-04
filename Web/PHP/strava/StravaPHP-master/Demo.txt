@@ -1,5 +1,0 @@
-Demo video: 
-Backend: PHP
-Front-end: Javascript (AngularJS framework)
-Database: MySQL
-Technologies: OAuth, Map, Facebook API, Strava API

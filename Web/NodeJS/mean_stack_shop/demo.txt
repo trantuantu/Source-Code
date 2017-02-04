@@ -1,7 +1,0 @@
-Demo video: https://youtu.be/UcGdX2pUcfI
-Host demo: 
-Host: Heroku
-Backend: NodeJS (Express framework)
-Front-end: Javascript (AngularJS framework)
-Database: Mongod
-Technologies: Socket (Auction realtime), JSON Web token Authentication (Web service Auth Protection), Hash Password, Responsive web, Password complexity, Boostrap, JQuery (Slide show), AJax, API Restful Web service, Local Storage

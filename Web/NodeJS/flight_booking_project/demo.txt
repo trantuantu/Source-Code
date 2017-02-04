@@ -1,7 +1,0 @@
-Demo video: https://www.youtube.com/watch?v=vHwGaJNWInU
-Host demo: http://cnm-flight-booking.herokuapp.com/
-Host: Heroku
-Backend: NodeJS (Express framework)
-Front-end: Javascript (AngularJS framework)
-Database: MySQL
-Technologies: Docker, Socket (Auction realtime), JSON Web token Authentication (Web service Auth Protection), Hash Password, Responsive web, Boostrap, JQuery (Slide show), AJax, API Restful Web service, Local Storage
