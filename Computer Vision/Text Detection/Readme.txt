@@ -1,4 +1,4 @@
-USAGE:
+USES:
 Recognize text from image
 SPECS:
 Language: C++ (Visual Studio 2013)

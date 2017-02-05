@@ -1,6 +1,6 @@
 DEMO:
 After using this API, we can render graph like in Example.html
-USAGE:
+USES:
 This application use to render graph and compare the result of athletes in an contest
 id: List of athletes id
 bid: Id of contest

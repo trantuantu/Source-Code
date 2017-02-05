@@ -1,6 +1,6 @@
 DEMO:
 See Screen Shot folder
-USAGE: Mean stack Example
+USES: Mean stack Example
 SPECS:
 Backend: NodeJS (Express framework)
 Front-end: Javascript (AngularJS framework)

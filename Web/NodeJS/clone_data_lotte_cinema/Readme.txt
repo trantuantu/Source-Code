@@ -1,4 +1,4 @@
-USAGE:
+USES:
 This application use to clone data from lotte cinema web page https://lottecinemavn.com/vi-vn/default.aspx
 SPECS:
 Backend: NodeJS (Express framework)

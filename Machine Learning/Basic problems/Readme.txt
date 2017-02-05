@@ -1,4 +1,4 @@
-USAGE:
+USES:
 Regression and Neural network (Recognize hand-written text (Mnist dataset))
 SPECS:
 Language: Python (Jupiter IDE)
