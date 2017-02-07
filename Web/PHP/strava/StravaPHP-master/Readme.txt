@@ -1,5 +1,5 @@
-DEMO:
-Demo video:
+DEMO
+Demo video: https://youtu.be/nOUIJh4XMCg
 USES:
 This application use to render the posion of athletes when they attend in a contest via data from GPS device (https://www.strava.com)
 Comparing with friend in Facebook
