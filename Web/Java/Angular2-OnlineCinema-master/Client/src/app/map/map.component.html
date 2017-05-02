@@ -1,0 +1,45 @@
+<div class="container">
+  <div class="page-header">
+    <h3>XEM DANH SÁCH VỊ TRÍ CÁC RẠP CHIẾU PHIM TẠI TP HỒ CHÍ MINH</h3>
+    <div class="btn-group">
+      <button type="button"
+              class="btn btn-primary dropdown-toggle"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        {{cinema}} <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu">
+        <li><a (click)="getMarkers(1)">RẠP GALAXY</a></li>
+        <li><a (click)="getMarkers(2)">RẠP CGV</a></li>
+        <li><a (click)="getMarkers(3)">RẠP BHD</a></li>
+        <li><a (click)="getMarkers(4)">RẠP LOTTE</a></li>
+        <li role="separator" class="divider"></li>
+        <li><a (click)="getMarkers(0)">XEM TẤT CẢ</a></li>
+        <li role="separator" class="divider"></li>
+        <li><a (click)="getMarkers(-1)">TÌM RẠP GẦN NHẤT</a></li>
+      </ul>
+    </div>
+  </div>
+  <sebm-google-map
+    [latitude]="markers[0].lat"
+    [longitude]="markers[0].lng"
+    [zoom]="zoom"
+    [disableDefaultUI]=false
+    [zoomControl]="false"
+    (mapClick)="mapClick($event)">
+
+    <sebm-google-map-marker
+      *ngFor="let m of markers; let i = index"
+      (markerClick)="clickedMarker(m, i)"
+      [latitude]="m.lat"
+      [longitude]="m.lng"
+      [markerDraggable]="m.draggable"
+      (dragEnd)="markerDragEnd(m, $event)">
+
+      <sebm-google-map-info-window>
+        <strong>{{m.name}}</strong>
+      </sebm-google-map-info-window>
+
+    </sebm-google-map-marker>
+  </sebm-google-map>
+
+</div>

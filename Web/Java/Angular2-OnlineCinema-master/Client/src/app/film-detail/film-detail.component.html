@@ -1,0 +1,56 @@
+<div class="container">
+  <div class="row header">
+    <div class="col-md-8">
+      <h1 class="page-header"> {{film.name}}
+        <small>{{film.release}}</small>
+      </h1>
+      <iframe class="e2e-trusted-url
+      embed-responsive-item trailer"
+              style="height: 512px"
+              [src]="trailerUrl"></iframe>
+    </div>
+    <div class="col-md-4">
+      <div class="well">
+        <img class="cover" src="{{film.img}}" alt="{{film.img}}">
+        <h2 align="center">{{film.duration}} </h2>
+        <p align="center" class="lead"> {{film.genre}}</p>
+      </div>
+    </div>
+  </div>
+  <hr>
+  <div *ngIf="isShow" class="page-header">
+    <h3>THÔNG TIN CHI TIẾT LỊCH CHIẾU </h3>
+    <div class="btn-group">
+      <button type="button"
+              class="btn btn-primary dropdown-toggle"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        {{title}} <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu">
+        <li><a (click)="getShowTimeByCinema(1)">RẠP GALAXY</a></li>
+        <li><a (click)="getShowTimeByCinema(2)">RẠP CGV</a></li>
+      </ul>
+    </div>
+  </div>
+  <ul class="timeline">
+    <li *ngFor="let branchCinema of showtimes">
+      <div class="timeline-badge">
+        <img src="../../assets/img/ic_calendar.svg">
+      </div>
+      <div class="timeline-panel">
+        <h4>{{branchCinema.name}} <span class="badge">{{branchCinema.times.length}}</span></h4>
+        <div *ngFor="let day of branchCinema.times">
+          <hr>
+          <div class="timeline-heading">
+            <h4 class="timeline-title">
+              <span class="label label-success"> {{day.day}}</span>
+            </h4>
+          </div>
+          <div class="timeline-body">
+            <h4><span class="label label-primary hour" *ngFor="let time of day.times"> {{time}}</span></h4>
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>

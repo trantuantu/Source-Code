@@ -6,7 +6,7 @@ android {
 
     defaultConfig {
         applicationId "com.example.tuantu.jnicarogame"
-        minSdkVersion.apiLevel 22
+        minSdkVersion.apiLevel 21
         targetSdkVersion.apiLevel 24
         versionCode 1
         versionName "1.0"

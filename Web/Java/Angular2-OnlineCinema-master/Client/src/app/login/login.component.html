@@ -1,0 +1,40 @@
+<div class="container" *ngIf="!isLogin">
+  <div class="info">
+    <h1>ĐĂNG NHẬP</h1>
+    <p>Đăng nhập để nhận nhiều thông tin khuyến mãi hấp dẫn hơn!</p>
+  </div>
+</div>
+<div class="form">
+  <div class="row" *ngIf="isLogin">
+    <img src="{{user.photoURL}}" alt="{{user.photoURL}}" class="img-circle img-responsive"/>
+    <h4><strong>{{user.displayName}}</strong></h4>
+  </div>
+  <form>
+    <div *ngIf="!isLogin">
+      <button class="facebook" (click)="loginFacebook()">
+        <i class="fa fa-facebook-official fa-lg" aria-hidden="true"></i>
+        Đăng nhập với <strong>Facebook</strong>
+      </button>
+    </div>
+    <div *ngIf="isLogin">
+      <button class="facebook" (click)="logout()">
+        <i class="fa fa-facebook-official fa-lg" aria-hidden="true"></i>
+        Đăng xuất
+      </button>
+    </div>
+  </form>
+</div>
+<div class="container">
+  <div class="alert alert-success alert-dismissible" role="alert" *ngIf="isLogin">
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+    <strong>Well done!</strong> You were successfully login!..
+  </div>
+  <div class="alert alert-warning alert-dismissible" role="alert" *ngIf="!isLogin">
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+    <strong>Oh no!</strong> You were logout!..
+  </div>
+</div>

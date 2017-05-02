@@ -1,0 +1,120 @@
+@import "../node_modules/font-awesome/css/font-awesome.css";
+@import "assets/css/animate.min.css";
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+body{
+  color: #1a1a1a;
+  background-color: #eeeeee;
+}
+/*body{
+  margin:0;
+  padding:0;
+  color: white;
+  font-family:"arial",heletica,sans-serif;
+  font-size:12px;
+  !*background: black url('http://static.tumblr.com/03fbbc566b081016810402488936fbae/pqpk3dn/MRSmlzpj3/tumblr_static_bg3.png') repeat 0 0;*!
+  background: url("../src/assets/img/ic_bak.jpg");
+  -webkit-animation: 10s linear 0s normal none infinite animate;
+  -moz-animation: 10s linear 0s normal none infinite animate;
+  -ms-animation: 10s linear 0s normal none infinite animate;
+  -o-animation: 10s linear 0s normal none infinite animate;
+  animation: 10s linear 0s normal none infinite animate;
+}
+
+@-webkit-keyframes animate {
+  from {background-position:0 0;}
+  to {background-position: 500px 0;}
+}
+
+@-moz-keyframes animate {
+  from {background-position:0 0;}
+  to {background-position: 500px 0;}
+}
+
+@-ms-keyframes animate {
+  from {background-position:0 0;}
+  to {background-position: 500px 0;}
+}
+
+@-o-keyframes animate {
+  from {background-position:0 0;}
+  to {background-position: 500px 0;}
+}
+
+@keyframes animate {
+  from {background-position:0 0;}
+  to {background-position: 500px 0;}
+}*/
+
+.center {
+  text-align: center;
+}
+
+.center h2 {
+  font-size: 36px;
+  margin-top: 24px;
+  margin-bottom: 20px;
+}
+
+.lead {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+.film_title {
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+#portfolio {
+  margin-top: 24px;
+}
+.portfolio-filter {
+  list-style: none outside none;
+  margin: 0 0 36px 0;
+  padding: 0;
+}
+
+.portfolio-filter > li {
+  display: inline-block;
+}
+
+.portfolio-filter > li a {
+  background: none repeat scroll 0 0 white;
+  font-size: 14px;
+  font-weight: 400;
+  margin-right: 20px;
+  text-transform: uppercase;
+  transition: all 0.9s ease 0s;
+  -moz-transition: all 0.9s ease 0s;
+  -webkit-transition: all 0.9s ease 0s;
+  -o-transition: all 0.9s ease 0s;
+  border: 1px solid #F2F2F2;
+  outline: none;
+  border-radius: 3px;
+}
+
+.portfolio-filter > li a:hover,
+.portfolio-filter > li a.active {
+  color: white;
+  background: #212121;
+  border: 1px solid #212121;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+}
+
+.portfolio-items > li {
+  float: left;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.portfolio-item {
+  padding: 4px;
+}

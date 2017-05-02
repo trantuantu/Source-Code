@@ -79,7 +79,7 @@ public class topSong extends Activity {
         protected ArrayList<String> doInBackground(String... strings) {
             ArrayList<String> buffer = new ArrayList<String>();
             try {
-                org.jsoup.nodes.Document doc = Jsoup.connect(strings[0]).get();
+                org.jsoup.nodes.Document doc = Jsoup.connect("http://mp3.zing.vn" + strings[0]).get();
                 //Get all albums of the airtist
                 albums = doc.select("div.album-item");
                 //Get album of the song

@@ -1,0 +1,99 @@
+[
+{
+    name: "CGV Hùng Vương Plaza",
+    lat: 10.7557866,
+    lng: 106.6608583,
+    draggable: false,
+    iconUrl: "http://hkd.com.vn/ckfinder/userfiles/images/DU%20AN/26-3.png"
+}, {
+    name: "CGV Crescent Mall",
+    lat: 10.72907,
+    lng: 106.7167563,
+    draggable: false,
+    iconUrl: "http://hkd.com.vn/ckfinder/userfiles/images/DU%20AN/26-3.png"
+}, {
+    name: "CGV CT Plaza",
+    lat: 10.813248,
+    lng: 106.6636266,
+    draggable: false,
+    iconUrl: "http://hkd.com.vn/ckfinder/userfiles/images/DU%20AN/26-3.png"
+}, {
+    name: "CGV Paragon",
+    lat: 10.729619,
+    lng: 106.7194853,
+    draggable: false,
+    iconUrl: "http://hkd.com.vn/ckfinder/userfiles/images/DU%20AN/26-3.png"
+}, {
+    name: "CGV Pandora City",
+    lat: 10.8069193,
+    lng: 106.6320505,
+    draggable: false,
+    iconUrl: "http://hkd.com.vn/ckfinder/userfiles/images/DU%20AN/26-3.png"
+}, {
+    name: "CGV Celadon Tân Phú",
+    lat: 10.801702,
+    lng: 106.6157859,
+    draggable: false,
+    iconUrl: "http://hkd.com.vn/ckfinder/userfiles/images/DU%20AN/26-3.png"
+}, {
+    name: "CGV Thảo Điền Pearl",
+    lat: 10.8017757,
+    lng: 106.730614,
+    draggable: false,
+    iconUrl: "http://hkd.com.vn/ckfinder/userfiles/images/DU%20AN/26-3.png"
+},{
+    name: "CGV Liberty Citypoint ",
+    lat: 10.7745725,
+    lng: 106.6984946,
+    draggable: false,
+    iconUrl: "http://hkd.com.vn/ckfinder/userfiles/images/DU%20AN/26-3.png"
+},{
+    name: "CGV Thủ Đức",
+    lat: 10.850432,
+    lng: 106.7631052,
+    draggable: false,
+    iconUrl: "http://hkd.com.vn/ckfinder/userfiles/images/DU%20AN/26-3.png"
+},{
+    name: "CGV SC VivoCity",
+    lat: 10.7301828,
+    lng: 106.7016488,
+    draggable: false,
+    iconUrl: "http://hkd.com.vn/ckfinder/userfiles/images/DU%20AN/26-3.png"
+},{
+    name: "CGV Pearl Plaza",
+    lat: 10.8000849,
+    lng: 106.7164107,
+    draggable: false,
+    iconUrl: "http://hkd.com.vn/ckfinder/userfiles/images/DU%20AN/26-3.png"
+},{
+    name: "CGV Gò Vấp",
+    lat: 10.8270443,
+    lng: 106.6870531,
+    draggable: false,
+    iconUrl: "http://hkd.com.vn/ckfinder/userfiles/images/DU%20AN/26-3.png"
+},{
+    name: "CGV Hoàng Văn Thụ ",
+    lat: 10.7988799,
+    lng: 106.657435,
+    draggable: false,
+    iconUrl: "http://hkd.com.vn/ckfinder/userfiles/images/DU%20AN/26-3.png"
+},{
+    name: "CGV Aeon Bình Tân",
+    lat: 10.743435,
+    lng: 106.6101133,
+    draggable: false,
+    iconUrl: "http://hkd.com.vn/ckfinder/userfiles/images/DU%20AN/26-3.png"
+},{
+    name: "CGV Vincom Đồng Khởi",
+    lat: 10.7779234,
+    lng: 106.6997641,
+    draggable: false,
+    iconUrl: "http://hkd.com.vn/ckfinder/userfiles/images/DU%20AN/26-3.png"
+},{
+    name: "CGV Saigonres Nguyễn Xí",
+    lat: 10.816261,
+    lng: 106.7049053,
+    draggable: false,
+    iconUrl: "http://hkd.com.vn/ckfinder/userfiles/images/DU%20AN/26-3.png"
+}
+]

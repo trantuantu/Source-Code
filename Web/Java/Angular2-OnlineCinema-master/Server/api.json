@@ -1,0 +1,35 @@
+API lấy slide: GET
+http://cinematest.njs.jelastic.vps-host.net/cinema/api/slideshows/{cinema} (cinema = Galaxy, CGV)
+
+API lấy danh sách phim: GET
+http://cinematest.njs.jelastic.vps-host.net/cinema/api/films
+
+API lấy danh sách phim của từng rạp: GET
+http://cinematest.njs.jelastic.vps-host.net/cinema/api/films/cinema/{cinema} (cinema = Galaxy, CGV)
+
+API lấy chi tiết phim : GET
+http://cinematest.njs.jelastic.vps-host.net/cinema/api/films/{id} (id = 1, 2, 3, 4.....)
+
+API lấy lịch chiếu phim : GET
+http://cinematest.njs.jelastic.vps-host.net/cinema/api/films/{id}/{cinema} (id = 1, 2, 3, 4.....     cinema = Galaxy, CGV)
+
+API login lấy token : POST {id}
+http://cinematest.njs.jelastic.vps-host.net/cinema/api/account/login 
+
+API login dùng token : POST {token}
+http://cinematest.njs.jelastic.vps-host.net/cinema/api/account/dosomething 
+
+API đăng kí noti : POST {token}
+http://cinematest.njs.jelastic.vps-host.net/cinema/api/account/notification/subscribe 
+
+API put noti : POST {title, content, link}
+http://cinematest.njs.jelastic.vps-host.net/cinema/api/account/notification/put 
+
+API lấy danh sách phim đang chiếu: GET
+http://cinematest.njs.jelastic.vps-host.net/cinema/api/films/nowshowing
+
+API lấy danh sách phim sắp chiếu: GET
+http://cinematest.njs.jelastic.vps-host.net/cinema/api/films/comingsoon
+
+API put noti : POST {link}
+http://cinematest.njs.jelastic.vps-host.net/cinema/api/account/notification/putmessage 

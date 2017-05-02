@@ -1,0 +1,39 @@
+[
+{
+    name: "BHD Star VINCOM LÊ VĂN VIỆT",
+    lat: 10.8456724,
+    lng: 106.7769402,
+    draggable: false,
+    iconUrl: "http://hkd.com.vn/ckfinder/userfiles/images/DU%20AN/26-3.png"
+}, {
+    name: "BHD Star VINCOM THẢO ĐIỀN",
+    lat: 10.8023027,
+    lng: 106.7387652,
+    draggable: false,
+    iconUrl: "http://hkd.com.vn/ckfinder/userfiles/images/DU%20AN/26-3.png"
+}, {
+    name: "BHD Star VINCOM QUANG TRUNG",
+    lat: 10.8292332,
+    lng: 106.6703046,
+    draggable: false,
+    iconUrl: "http://hkd.com.vn/ckfinder/userfiles/images/DU%20AN/26-3.png"
+}, {
+    name: "BHD Star VINCOM 3/2",
+    lat: 10.8292312,
+    lng: 106.6374737,
+    draggable: false,
+    iconUrl: "http://hkd.com.vn/ckfinder/userfiles/images/DU%20AN/26-3.png"
+}, {
+    name: "BHD Star Cineplex Satra Pham Hung",
+    lat: 10.733311,
+    lng: 106.6717529,
+    draggable: false,
+    iconUrl: "http://hkd.com.vn/ckfinder/userfiles/images/DU%20AN/26-3.png"
+}, {
+    name: "BHD Star Cineplex ICON 68 Bitexco's group",
+    lat: 10.7716687,
+    lng: 106.7021967,
+    draggable: false,
+    iconUrl: "http://hkd.com.vn/ckfinder/userfiles/images/DU%20AN/26-3.png"
+}
+]

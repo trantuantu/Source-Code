@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans-4.1.xsd">
+ 
+ <bean id="registrationFormDAO" class="com.dulich.model.dao.RegistrationFormDAOlmpl">
+     <property name="sessionFactory" ref="mySessionFactory" />
+ </bean>  
+ <bean id="userDAO" class="com.dulich.model.dao.UserDAOImpl">
+     <property name="sessionFactory" ref="mySessionFactory" />
+ </bean>
+  <bean id="hotelDAO" class="com.dulich.model.dao.HotelDAOImpl">
+     <property name="sessionFactory" ref="mySessionFactory" />
+ </bean>
+ <bean id="RestaurantDAO" class="com.dulich.model.dao.RestaurantDAOImpl">
+     <property name="sessionFactory" ref="mySessionFactory" />
+ </bean>
+ <bean id="PhieuDangKiDAO" class="com.dulich.model.dao.PhieuDangKiDAOImpl">
+     <property name="sessionFactory" ref="mySessionFactory" />
+ </bean>
+<bean id="KhachHangDAO" class="com.dulich.model.dao.KhachHangDAOImpl">
+     <property name="sessionFactory" ref="mySessionFactory" />
+ </bean>
+ <bean id="TourDAO" class="com.dulich.model.dao.TourDAOImpl">
+     <property name="sessionFactory" ref="mySessionFactory" />
+ </bean>
+ <bean id="CustomerDAO" class="com.dulich.model.dao.CustomerDAOImpl">
+     <property name="sessionFactory" ref="mySessionFactory" />
+ </bean> 
+<bean id="diaDiemDuLichDAO" class="com.dulich.model.dao.DiaDiemDuLichDAOImpl">
+     <property name="sessionFactory" ref="mySessionFactory" />
+ </bean>
+ <bean id="danhSachDiaDiemDAO" class="com.dulich.model.dao.DanhSachDiaDiemDAOImpl">
+     <property name="sessionFactory" ref="mySessionFactory" />
+ </bean> 
+ 
+  <bean id="TourRealityDAO" class="com.dulich.model.dao.TourRealityDAOImpl">
+     <property name="sessionFactory" ref="mySessionFactory" />
+ </bean> 
+ 
+ <bean id="danhSachNhaHangKhachSanDAO" class="com.dulich.model.dao.DanhSachNhaHangKhachSanDAOImpl">
+     <property name="sessionFactory" ref="mySessionFactory" />
+ </bean> 
+
+</beans>

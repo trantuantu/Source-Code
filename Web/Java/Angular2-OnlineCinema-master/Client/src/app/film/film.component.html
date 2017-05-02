@@ -1,0 +1,68 @@
+<section id="portfolio">
+  <div class="container">
+    <ul class="portfolio-filter text-center">
+      <li>
+        <a class="btn btn-default" *ngFor="let tabMenu of tabMenus; let idx = index" [class.active]="tabMenu.active"
+           (click)="clicked(idx)">
+          {{tabMenu.title}}
+        </a>
+      </li>
+    </ul>
+    <div class="row">
+      <div class="portfolio-items">
+        <div class="portfolio-item apps col-xs-12 col-sm-4 col-md-3"
+             *ngFor="let film of films">
+          <div class="recent-work-wrap">
+            <img class="img-responsive" src="{{film.img}}" width="300" height="450" alt="{{film.name}}">
+            <div class="overlay">
+              <div class="recent-work-inner">
+                <h3 align="center">{{film.name}}</h3>
+                <h4 align="center">Thể loại <span class="label label-success">{{film.genre}}</span></h4>
+                <h4 align="center">Thời lượng <span class="label label-success">{{film.duration}}</span></h4>
+              </div>
+            </div>
+          </div>
+          <h4 align="center">
+            <button type="button" class="btn btn-danger" [routerLink]="['/film', film.id + '_none']">
+              {{film.name}}
+            </button>
+          </h4>
+          <h4 align="center">
+            Khởi chiếu
+            <span class="label label-success">
+              {{film.release}}
+            </span>
+          </h4>
+          <h4 align="center">
+            <a class="btn btn-success" href="#" (click)="getTrailer(film)"
+               data-toggle="modal" data-target="#basicModal">
+              <i class="fa fa-eye fa-lg"></i>
+              Trailer
+            </a>
+            <button type="button" class="btn btn-primary" (click)="share(film)">
+              <i class="fa fa-facebook-official fa-lg"></i>
+              Share
+            </button>
+          </h4>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--// Model-->
+  <div class="modal fade" id="basicModal" tabindex="-1" role="dialog"
+       aria-labelledby="basicModal" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <h4 class="modal-title" id="myModalLabel">Trailer </h4>
+        </div>
+        <div class="modal-body">
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe class="embed-responsive-item" [src]="trailerUrl"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

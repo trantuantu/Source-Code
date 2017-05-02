@@ -1,4 +1,3 @@
-/*
 package com.example.tuantu.week7_findplacenearby;
 
 
@@ -21,10 +20,7 @@ import android.provider.SyncStateContract;
 import android.support.v7.app.NotificationCompat;
 import android.widget.Toast;
 
-*/
-/**
- * Created by TUAN TU on 5/30/2016.
- *//*
+
 
 public class PowerService extends Service {
     public static int count1  = 0;
@@ -80,7 +76,7 @@ public class PowerService extends Service {
         Setting._numCall = Integer.parseInt(settingCursor.getString(settingCursor.getColumnIndex(Setting.SettingDb.SettingDes.CALLNUM)));
     }
 
-        final boolean screenOn = intent.getBooleanExtra("screen_state", false);
+        boolean screenOn = intent.getBooleanExtra("screen_state", false);
         if (!screenOn) {
             count1++;
             count2++;
@@ -151,42 +147,41 @@ public class PowerService extends Service {
             //Toast.makeText(getApplicationContext(), "Power off", Toast.LENGTH_LONG).show();
             count1++;
             count2++;
-           */
-/* if (count >= 3)
-            {
-                Toast.makeText(getApplicationContext(), "Emergency mode!", Toast.LENGTH_LONG).show();
-                count = 0;
-            }
-            else {
-                handler2 = new Handler();
-                Runnable runnable = new Runnable() {
-                    public void run() {
-                        CountDownTimer timer = new CountDownTimer(1000, 10) {
-                            @Override
-                            public void onTick(long millisUntilFinished) {
-                                if (!screenOn)
-                                {
-                                    count++;
-                                    flag2 = true;
-                                }
-                            }
+// if (count >= 3)
+//            {
+//                Toast.makeText(getApplicationContext(), "Emergency mode!", Toast.LENGTH_LONG).show();
+//                count = 0;
+//            }
+//            else {
+//                handler2 = new Handler();
+//                Runnable runnable = new Runnable() {
+//                    public void run() {
+//                        CountDownTimer timer = new CountDownTimer(1000, 10) {
+//                            @Override
+//                            public void onTick(long millisUntilFinished) {
+//                                if (!screenOn)
+//                                {
+//                                    count++;
+//                                    flag2 = true;
+//                                }
+//                            }
+//
+//                            @Override
+//                            public void onFinish() {
+//                                if (flag2 == false)
+//                                {
+//                                    count = 0;
+//                                }
+//                                flag2 = false;
+//                            }
+//                        };
+//                        handler2.postDelayed(this, 1100);
+//                    }
+//                };
+//                runnable.run();
+//            }
 
-                            @Override
-                            public void onFinish() {
-                                if (flag2 == false)
-                                {
-                                    count = 0;
-                                }
-                                flag2 = false;
-                            }
-                        };
-                        handler2.postDelayed(this, 1100);
-                    }
-                };
-                runnable.run();
-            }*//*
-
-            //Toast.makeText(getApplicationContext(), "Power off", Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(), "Power off", Toast.LENGTH_LONG).show();
         }
         Notification notification = new NotificationCompat.Builder(this)
                 .setContentTitle("Truiton Music Player")
@@ -208,4 +203,3 @@ public class PowerService extends Service {
     private final IBinder mBinder = new LocalBinder();
 
 }
-*/

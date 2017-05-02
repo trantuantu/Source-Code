@@ -1,0 +1,52 @@
+[
+{
+    name: "Lotte Cantavil",
+    lat: 10.8017625,
+    lng: 106.7446821,
+    draggable: false,
+    iconUrl: "http://hkd.com.vn/ckfinder/userfiles/images/DU%20AN/26-3.png"
+}, {
+    name: "Lotte Cinema Cộng Hoà",
+    lat: 10.801236,
+    lng: 106.6505638,
+    draggable: false,
+    iconUrl: "http://hkd.com.vn/ckfinder/userfiles/images/DU%20AN/26-3.png"
+}, {
+    name: "Lotteria Diamond",
+    lat: 10.7813623,
+    lng: 106.6964442,
+    draggable: false,
+    iconUrl: "http://hkd.com.vn/ckfinder/userfiles/images/DU%20AN/26-3.png"
+}, {
+    name: "Lotte Cinema Go Vap",
+    lat: 10.8383785,
+    lng: 106.6687854,
+    draggable: false,
+    iconUrl: "http://hkd.com.vn/ckfinder/userfiles/images/DU%20AN/26-3.png"
+}, {
+    name: "Lotte Cinema Nam Sai Gon",
+    lat: 10.7409423,
+    lng: 106.700126,
+    draggable: false,
+    iconUrl: "http://hkd.com.vn/ckfinder/userfiles/images/DU%20AN/26-3.png"
+}, {
+    name: "Lotte Cinema Nowzone",
+    lat: 10.764032,
+    lng: 106.6810413,
+    draggable: false,
+    iconUrl: "http://hkd.com.vn/ckfinder/userfiles/images/DU%20AN/26-3.png"
+}, {
+    name: "Lotte Cinema Phú Thọ",
+    lat: 10.7632651,
+    lng: 106.6545911,
+    draggable: false,
+    iconUrl: "http://hkd.com.vn/ckfinder/userfiles/images/DU%20AN/26-3.png"
+}, {
+    name: "Lotte Cinema Thủ Đức",
+    lat: 10.8712548,
+    lng: 106.7670491,
+    draggable: false,
+    iconUrl: "http://hkd.com.vn/ckfinder/userfiles/images/DU%20AN/26-3.png"
+}
+]
+

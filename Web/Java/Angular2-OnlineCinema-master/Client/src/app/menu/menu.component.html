@@ -1,0 +1,78 @@
+<header id="header">
+  <div class="top-bar">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 col-xs-4">
+          <div class="top-number"><p><i class="fa fa-envelope-o"></i> hackrules.io@gmail.com </p></div>
+        </div>
+        <div class="col-sm-6 col-xs-8">
+          <div class="social">
+            <div class="search">
+              <form class="search-form">
+                <input class="search-box" name="q" type="text" size="40" placeholder="Tìm kiếm..."/>
+              </form>
+            </div>
+            <ul class="social-share">
+              <li data-toggle="tooltip" data-placement="right" title="Click để đăng nhập">
+                <a routerLink="login" routerLinkActive="active">
+                  <i class="fa fa-user-circle-o" aria-hidden="true"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <nav class="navbar navbar-inverse" role="banner">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" routerLink="" routerLinkActive="active">
+          <img src="../assets/img/logo.png" height="52" width="115" alt="logo">
+        </a>
+      </div>
+      <div class="collapse navbar-collapse navbar-right">
+        <ul class="nav navbar-nav">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">RẠP PHIM <i class="fa fa-angle-down"></i></a>
+            <ul class="dropdown-menu">
+              <li>
+                <a routerLink="cinema/Galaxy" routerLinkActive="active">
+                  GALAXY CINEMA
+                </a>
+              </li>
+              <li>
+                <a routerLink="cinema/CGV" routerLinkActive="active">
+                  CGV CINEMA
+                </a>
+              </li>
+              <li>
+                <a routerLink="cinema/BHD" routerLinkActive="active">
+                  BHD CINEMA
+                </a>
+              </li>
+              <li>
+                <a routerLink="cinema/Lotte" routerLinkActive="active">
+                  LOTTE CINEMA
+                </a>
+              </li>
+
+            </ul>
+          </li>
+          <li *ngFor="let navMenu of navMenus; let idx = index" [class.active]="navMenu.active" (click)="clicked(idx)">
+            <a routerLink="{{navMenu.link}}" routerLinkActive="active">
+              {{navMenu.title}}
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>

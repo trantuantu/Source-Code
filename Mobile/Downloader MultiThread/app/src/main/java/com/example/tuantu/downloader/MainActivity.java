@@ -100,8 +100,8 @@ public class MainActivity extends AppCompatActivity {
 
     private void initListDownload() {
         downloadItems = new ArrayList<DownloadItem>();
-        downloadItems.add(new DownloadItem("a", "Trọng Hiếu", "Single", R.drawable.logo, "http://dl.channelz2.mp3.zdn.vn/zv/3bc9a815c574f5b3abff9154d39a0e1d/579831c0/2016/07/20/7/c/7c9f082246b5cb78398691bd794663b2.mp4?filename=Trai%20Tim%20Con%20Trinh%20-%20Vy%20Oanh%20-%20360p.mp4"));
-        downloadItems.add(new DownloadItem("b", "Hariwon", "Single", R.drawable.logo1, "http://dl.channelz2.mp3.zdn.vn/zv/3bc9a815c574f5b3abff9154d39a0e1d/579831c0/2016/07/20/7/c/7c9f082246b5cb78398691bd794663b2.mp4?filename=Trai%20Tim%20Con%20Trinh%20-%20Vy%20Oanh%20-%20360p.mp4"));
+        downloadItems.add(new DownloadItem("a", "Trọng Hiếu", "Single", R.drawable.logo, "http://zmp3-mp3-mv1.r.za.zdn.vn/5d1a09473702de5c8713/8317374331221575221?key=j59AA7cwol5ZK29pub1-Gw&expires=1489685682"));
+        downloadItems.add(new DownloadItem("b", "Hariwon", "Single", R.drawable.logo1, "http://zmp3-mp3-mv1.r.za.zdn.vn/5d1a09473702de5c8713/8317374331221575221?key=j59AA7cwol5ZK29pub1-Gw&expires=1489685682"));
         downloadItems.add(new DownloadItem("c", "ERIK ST.319", "Single", R.drawable.logo2, "http://dl.channelz2.mp3.zdn.vn/zv/3bc9a815c574f5b3abff9154d39a0e1d/579831c0/2016/07/20/7/c/7c9f082246b5cb78398691bd794663b2.mp4?filename=Trai%20Tim%20Con%20Trinh%20-%20Vy%20Oanh%20-%20360p.mp4"));
         downloadItems.add(new DownloadItem("d", "Trọng Hiếu", "Single", R.drawable.logo, "http://dl.channelz2.mp3.zdn.vn/zv/3bc9a815c574f5b3abff9154d39a0e1d/579831c0/2016/07/20/7/c/7c9f082246b5cb78398691bd794663b2.mp4?filename=Trai%20Tim%20Con%20Trinh%20-%20Vy%20Oanh%20-%20360p.mp4"));
         downloadItems.add(new DownloadItem("e", "Hariwon", "Single", R.drawable.logo1, "http://dl.channelz2.mp3.zdn.vn/zv/3bc9a815c574f5b3abff9154d39a0e1d/579831c0/2016/07/20/7/c/7c9f082246b5cb78398691bd794663b2.mp4?filename=Trai%20Tim%20Con%20Trinh%20-%20Vy%20Oanh%20-%20360p.mp4"));

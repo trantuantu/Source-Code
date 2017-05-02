@@ -167,7 +167,7 @@ _context = this;
 //---------------------------------------------------------------------------------------
         //stopService(new Intent(this, PowerService.class));
         Setting.databseProcess();
-       // startService(new Intent(this, PowerService.class));
+        startService(new Intent(this, PowerService.class));
 
         panel = (LinearLayout)findViewById(R.id.showDetails);
         slidingLayout = (SlidingUpPanelLayout)findViewById(R.id.sliding_layout);

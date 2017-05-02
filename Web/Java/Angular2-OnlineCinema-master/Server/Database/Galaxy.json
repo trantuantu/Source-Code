@@ -1,0 +1,27 @@
+[
+{
+    name: "GALAXY NGUYỄN DU",
+    lat: 10.7732941,
+    lng: 106.690802,
+    draggable: false,
+    iconUrl: "http://hkd.com.vn/ckfinder/userfiles/images/DU%20AN/26-3.png"
+}, {
+    name: "GALAXY TÂN BÌNH",
+    lat: 10.7902587,
+    lng: 106.6385232,
+    draggable: false,
+    iconUrl: "http://hkd.com.vn/ckfinder/userfiles/images/DU%20AN/26-3.png"
+}, {
+    name: "GALAXY KINH DƯƠNG VƯƠNG",
+    lat: 10.7500903,
+    lng: 106.6259716,
+    draggable: false,
+    iconUrl: "http://hkd.com.vn/ckfinder/userfiles/images/DU%20AN/26-3.png"
+}, {
+    name: "GALAXY QUANG TRUNG",
+    lat: 10.8347421,
+    lng: 106.6600354,
+    draggable: false,
+    iconUrl: "http://hkd.com.vn/ckfinder/userfiles/images/DU%20AN/26-3.png"
+}
+]
